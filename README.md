@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #000000; /* zwarte achtergrond */
-            color: #d3d3d3; /* wit/grijze letters */
+            background: linear-gradient(to right, #f0f0f5, #e0e0eb); /* zachte achtergrondkleur met gradient */
+            color: #333;
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,7 +21,7 @@
 
         h1 {
             font-size: 3em;
-            color: #ffffff; /* witte letters voor de titel */
+            color: #4CAF50; /* frisse groen accentkleur */
             margin-bottom: 0.5em;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -32,12 +32,12 @@
             font-size: 1.3em;
             line-height: 1.6;
             margin: 0.5em 0;
-            color: #d3d3d3; /* wit/grijze tekst */
+            color: #555; /* zachtere kleur voor de tekst */
         }
 
         footer {
             font-size: 1.2em;
-            color: #a9a9a9; /* lichtere grijze kleur voor de footer */
+            color: #888;
             margin-top: 2em;
             font-style: italic;
             animation: fadeIn 2s ease-in-out 1s; /* subtiele animatie voor footer */
@@ -49,22 +49,14 @@
         }
 
         .container {
-            background-color: rgba(255, 255, 255, 0.1); /* semi-transparante achtergrond */
+            background-color: #ffffff;
             padding: 3em;
             border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             max-width: 650px;
             width: 100%;
             text-align: center;
             animation: zoomIn 0.8s ease-out;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin: 1em 0;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
         /* Subtiele animaties */
@@ -111,11 +103,8 @@
 <body>
     <div class="container">
         <h1>Een speciale nieuwjaarswens voor Mariska</h1>
-        <img src="URL_VAN_OUD_EN_NIEUW_AFBEELDING" alt="Oud en Nieuw">
         <p>Ik wens je iets goeds, iets lekkers, iets geks, iets aardigs, iets liefs en hoe dan ook iets positiefs.</p>
-        <img src="URL_VAN_ZEEP_AFBEELDING" alt="Zeep">
         <p><strong>Gelukkig nieuwjaar!</strong></p>
-        <img src="URL_VAN_HARDLOPEN_AFBEELDING" alt="Hardlopen">
         <footer>Met liefde gemaakt, speciaal voor jou.</footer>
     </div>
 </body>
