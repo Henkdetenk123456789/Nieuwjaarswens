@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +17,7 @@
             height: 100vh;
             text-align: center;
             animation: fadeIn 2s ease-in-out; /* subtiele animatie bij laden */
+            overflow: hidden; /* Verberg overloop voor animaties */
         }
 
         h1 {
@@ -156,6 +156,48 @@
                 opacity: 0;
             }
         }
+
+        /* Vallende sterren */
+        .shooting-star {
+            position: absolute;
+            top: -50px;
+            width: 2px;
+            height: 100px;
+            background: linear-gradient(white, rgba(255, 255, 255, 0));
+            animation: shoot 3s ease-in-out infinite;
+        }
+
+        @keyframes shoot {
+            0% {
+                transform: translateX(0) translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(500px) translateY(500px);
+                opacity: 0;
+            }
+        }
+
+        /* Confetti */
+        .confetti {
+            position: absolute;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #ffd700;
+            animation: fall 3s ease-in-out infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -167,6 +209,15 @@
     </div>
     <div class="firework"></div>
     <div class="explosion"></div>
+    <div class="shooting-star" style="left: 20%; animation-delay: 0s;"></div>
+    <div class="shooting-star" style="left: 40%; animation-delay: 1s;"></div>
+    <div class="shooting-star" style="left: 60%; animation-delay: 2s;"></div>
+    <div class="shooting-star" style="left: 80%; animation-delay: 3s;"></div>
+    <div class="confetti" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="confetti" style="left: 30%; animation-delay: 0.5s;"></div>
+    <div class="confetti" style="left: 50%; animation-delay: 1s;"></div>
+    <div class="confetti" style="left: 70%; animation-delay: 1.5s;"></div>
+    <div class="confetti" style="left: 90%; animation-delay: 2s;"></div>
     <div class="hidden-text"><!DOCTYPE html></div>
 </body>
 </html>
