@@ -6,9 +6,9 @@
     <title>Nieuwjaarswens voor Mariska</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background: linear-gradient(to right, #f0f0f5, #e0e0eb); /* zachte achtergrondkleur met gradient */
-            color: #333;
+            font-family: 'Georgia', serif; /* Dille & Kamille stijl */
+            background-color: #f5f5f5; /* lichte achtergrondkleur */
+            color: #333; /* donkere tekstkleur */
             margin: 0;
             padding: 0;
             display: flex;
@@ -20,23 +20,23 @@
         }
 
         h1 {
-            font-size: 3em;
-            color: #4CAF50; /* frisse groen accentkleur */
+            font-size: 2.5em;
+            color: #6b8e23; /* olijfgroene kleur voor de titel */
             margin-bottom: 0.5em;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-transform: uppercase;
             animation: slideIn 1s ease-out;
         }
 
         p {
-            font-size: 1.3em;
+            font-size: 1.2em;
             line-height: 1.6;
             margin: 0.5em 0;
             color: #555; /* zachtere kleur voor de tekst */
         }
 
         footer {
-            font-size: 1.2em;
+            font-size: 1em;
             color: #888;
             margin-top: 2em;
             font-style: italic;
@@ -44,19 +44,27 @@
         }
 
         strong {
-            color: #e91e63; /* roze voor nadruk */
+            color: #b22222; /* donkerrode kleur voor nadruk */
             font-weight: bold;
         }
 
         .container {
             background-color: #ffffff;
-            padding: 3em;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            max-width: 650px;
+            padding: 2em;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
             width: 100%;
             text-align: center;
             animation: zoomIn 0.8s ease-out;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 1em 0;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         }
 
         /* Subtiele animaties */
@@ -91,21 +99,30 @@
 
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.5em;
+                font-size: 2em;
             }
 
             p {
-                font-size: 1.1em;
+                font-size: 1em;
             }
+        }
+
+        /* Onzichtbare tekst */
+        .hidden-text {
+            color: #000000; /* zelfde kleur als de achtergrond */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Een speciale nieuwjaarswens voor Mariska</h1>
+        <img src="URL_VAN_OUD_EN_NIEUW_AFBEELDING" alt="Oud en Nieuw">
         <p>Ik wens je iets goeds, iets lekkers, iets geks, iets aardigs, iets liefs en hoe dan ook iets positiefs.</p>
+        <img src="URL_VAN_ZEEP_AFBEELDING" alt="Zeep">
         <p><strong>Gelukkig nieuwjaar!</strong></p>
+        <img src="URL_VAN_HARDLOPEN_AFBEELDING" alt="Hardlopen">
         <footer>Met liefde gemaakt, speciaal voor jou.</footer>
     </div>
+    <div class="hidden-text"><!DOCTYPE html></div>
 </body>
 </html>
