@@ -1,4 +1,3 @@
-
 <!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
@@ -51,7 +50,7 @@
         }
 
         .container {
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.9); /* Transparante achtergrond */
             padding: 2em;
             border-radius: 20px; /* ronde afwerking */
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -59,6 +58,12 @@
             width: 100%;
             text-align: center;
             animation: zoomIn 0.8s ease-out;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
         /* Subtiele animaties */
@@ -194,6 +199,13 @@
                 opacity: 0;
             }
         }
+
+        /* Aftelklok */
+        #countdown {
+            font-size: 1.5em;
+            color: #ffd700;
+            margin-top: 2em;
+        }
     </style>
 </head>
 <body>
@@ -216,6 +228,32 @@
     <div class="confetti" style="left: 50%; animation-delay: 1s;"></div>
     <div class="confetti" style="left: 70%; animation-delay: 1.5s;"></div>
     <div class="confetti" style="left: 90%; animation-delay: 2s;"></div>
+    <div id="countdown"></div>
     <div class="hidden-text"><!-- <!DOCTYPE html> --></div>
+
+    <script>
+        // Aftelklok script
+        const countdown = document.getElementById('countdown');
+        const targetDate = new Date('January 1, 2026 00:00:00').getTime();
+
+        const updateCountdown = () => {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            countdown.innerHTML = `Nog ${days} dagen, ${hours} uur, ${minutes} minuten en ${seconds} seconden tot 2026!`;
+
+            if (distance < 0) {
+                clearInterval(interval);
+                countdown.innerHTML = "Gelukkig Nieuwjaar!";
+            }
+        };
+
+        const interval = setInterval(updateCountdown, 1000);
+    </script>
 </body>
 </html>
