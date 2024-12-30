@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #f0f0f5; /* zachte achtergrondkleur */
+            background: linear-gradient(to right, #f0f0f5, #e0e0eb); /* zachte achtergrondkleur met gradient */
             color: #333;
             margin: 0;
             padding: 0;
