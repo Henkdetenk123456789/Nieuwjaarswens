@@ -6,42 +6,48 @@
     <title>Nieuwjaarswens voor Mariska</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #F5F5F5;
+            background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
             color: #333;
         }
         .container {
             text-align: center;
             max-width: 600px;
-            padding: 20px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
         .title {
-            font-size: 24px;
-            font-weight: bold;
+            font-size: 28px;
+            font-weight: 700;
+            color: #444;
             margin-bottom: 20px;
+            border-bottom: 2px solid #FF6F61;
+            padding-bottom: 10px;
         }
-        .rebus {
-            font-size: 18px;
+        .message {
+            font-size: 20px;
             margin: 20px 0;
+            line-height: 1.8;
+            color: #555;
         }
-        .rebus img {
-            width: 50px;
-            vertical-align: middle;
-            margin: 0 5px;
+        .message p {
+            margin: 10px 0;
+        }
+        .message strong {
+            color: #FF6F61;
+            font-size: 22px;
         }
         .footer {
-            font-size: 14px;
-            color: #777;
+            font-size: 16px;
+            color: #888;
             margin-top: 20px;
         }
     </style>
@@ -49,16 +55,8 @@
 <body>
     <div class="container">
         <div class="title">Een speciale nieuwjaarswens voor Mariska</div>
-        <div class="rebus">
-            <p>Ik wens je:</p>
-            <p>
-                <img src="https://via.placeholder.com/50?text=G" alt="Goed"> iets goeds,<br>
-                <img src="https://via.placeholder.com/50?text=Donut" alt="Lekker"> iets lekkers,<br>
-                <img src="https://via.placeholder.com/50?text=%3F" alt="Gek"> iets geks,<br>
-                <img src="https://via.placeholder.com/50?text=Hart" alt="Aardig"> iets aardigs,<br>
-                <img src="https://via.placeholder.com/50?text=Lief" alt="Lief"> iets liefs,<br>
-                en hoe dan ook iets positiefs.
-            </p>
+        <div class="message">
+            <p>Ik wens je iets goeds, iets lekkers, iets geks, iets aardigs, iets liefs en hoe dan ook iets positiefs.</p>
             <p><strong>Gelukkig nieuwjaar!</strong></p>
         </div>
         <div class="footer">Met liefde gemaakt, speciaal voor jou.</div>
