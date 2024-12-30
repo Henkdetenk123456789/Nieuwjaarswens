@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,6 +59,14 @@
             animation: zoomIn 0.8s ease-out;
         }
 
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1em 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
         /* Subtiele animaties */
         @keyframes fadeIn {
             0% {
@@ -104,8 +111,11 @@
 <body>
     <div class="container">
         <h1>Een speciale nieuwjaarswens voor Mariska</h1>
+        <img src="https://example.com/oud-en-nieuw.jpg" alt="Oud en Nieuw">
         <p>Ik wens je iets goeds, iets lekkers, iets geks, iets aardigs, iets liefs en hoe dan ook iets positiefs.</p>
+        <img src="https://example.com/zeep.jpg" alt="Zeep">
         <p><strong>Gelukkig nieuwjaar!</strong></p>
+        <img src="https://example.com/hardlopen.jpg" alt="Hardlopen">
         <footer>Met liefde gemaakt, speciaal voor jou.</footer>
     </div>
 </body>
