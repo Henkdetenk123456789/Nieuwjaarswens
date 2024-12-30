@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,8 @@
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background: linear-gradient(to right, #f0f0f5, #e0e0eb); /* zachte achtergrondkleur met gradient */
-            color: #333;
+            background: linear-gradient(to right, #2c3e50, #4ca1af); /* donkere achtergrond met gradient */
+            color: #ecf0f1; /* parelmoerkleurige letters */
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,7 +22,7 @@
 
         h1 {
             font-size: 3em;
-            color: #4CAF50; /* frisse groen accentkleur */
+            color: #e74c3c; /* accentkleur voor de titel */
             margin-bottom: 0.5em;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -32,12 +33,12 @@
             font-size: 1.3em;
             line-height: 1.6;
             margin: 0.5em 0;
-            color: #555; /* zachtere kleur voor de tekst */
+            color: #ecf0f1; /* parelmoerkleurige tekst */
         }
 
         footer {
             font-size: 1.2em;
-            color: #888;
+            color: #bdc3c7;
             margin-top: 2em;
             font-style: italic;
             animation: fadeIn 2s ease-in-out 1s; /* subtiele animatie voor footer */
@@ -49,10 +50,10 @@
         }
 
         .container {
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.1); /* semi-transparante achtergrond */
             padding: 3em;
             border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
             max-width: 650px;
             width: 100%;
             text-align: center;
