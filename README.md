@@ -105,41 +105,51 @@
             color: #f5f5f5; /* zelfde kleur als de achtergrond */
         }
 
-        /* Champagneflessen */
-        .champagne {
+        /* Vuurwerk */
+        .firework {
             position: absolute;
-            bottom: -100px;
-            width: 30px;
-            height: 60px;
-            background-color: #ffd700;
-            border-radius: 10px 10px 0 0;
-            animation: rise 5s ease-in-out infinite;
-        }
-
-        .champagne::before {
-            content: '';
-            position: absolute;
-            bottom: 60px;
+            bottom: 50%;
             left: 50%;
-            width: 10px;
-            height: 20px;
-            background-color: #333;
+            width: 5px;
+            height: 5px;
+            background-color: #ffd700;
             border-radius: 50%;
-            transform: translateX(-50%);
+            animation: explode 1s ease-in-out infinite;
         }
 
-        @keyframes rise {
+        @keyframes explode {
             0% {
-                bottom: -100px;
-                opacity: 0;
-            }
-            50% {
+                transform: scale(1);
                 opacity: 1;
             }
+            50% {
+                transform: scale(2);
+                opacity: 0.5;
+            }
             100% {
-                bottom: 100vh;
+                transform: scale(3);
                 opacity: 0;
             }
+        }
+
+        .firework::before, .firework::after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: #ffd700;
+            border-radius: 50%;
+            animation: explode 1s ease-in-out infinite;
+        }
+
+        .firework::before {
+            top: -20px;
+            left: -20px;
+        }
+
+        .firework::after {
+            top: 20px;
+            left: 20px;
         }
 
         /* Vallende sterren */
@@ -192,10 +202,10 @@
         <p><strong>Gelukkig nieuwjaar!</strong></p>
         <footer>Met liefde gemaakt, speciaal voor jou.</footer>
     </div>
-    <div class="champagne" style="left: 20%; animation-delay: 0s;"></div>
-    <div class="champagne" style="left: 40%; animation-delay: 1s;"></div>
-    <div class="champagne" style="left: 60%; animation-delay: 2s;"></div>
-    <div class="champagne" style="left: 80%; animation-delay: 3s;"></div>
+    <div class="firework" style="left: 20%; animation-delay: 0s;"></div>
+    <div class="firework" style="left: 40%; animation-delay: 1s;"></div>
+    <div class="firework" style="left: 60%; animation-delay: 2s;"></div>
+    <div class="firework" style="left: 80%; animation-delay: 3s;"></div>
     <div class="shooting-star" style="left: 20%; animation-delay: 0s;"></div>
     <div class="shooting-star" style="left: 40%; animation-delay: 1s;"></div>
     <div class="shooting-star" style="left: 60%; animation-delay: 2s;"></div>
