@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,12 +60,13 @@
             animation: zoomIn 0.8s ease-out;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin: 1em 0;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        .highlight {
+            color: #ff6347; /* tomaatkleur voor extra nadruk */
+            font-weight: bold;
+        }
+
+        .underline {
+            text-decoration: underline;
         }
 
         /* Subtiele animaties */
@@ -109,18 +111,15 @@
 
         /* Onzichtbare tekst */
         .hidden-text {
-            color: #000000; /* zelfde kleur als de achtergrond */
+            color: #f5f5f5; /* zelfde kleur als de achtergrond */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Een speciale nieuwjaarswens voor Mariska</h1>
-        <img src="[URL_VAN_OUD_EN_NIEUW_AFBEELDING](https://media.s-bol.com/N5Yw8KKlZXkL/L8vZNGr/550x378.jpg)" alt="Oud en Nieuw">
-        <p>Ik wens je iets goeds, iets lekkers, iets geks, iets aardigs, iets liefs en hoe dan ook iets positiefs.</p>
-        <img src="URL_VAN_ZEEP_AFBEELDING" alt="Zeep">
+        <p>Ik wens je <span class="highlight">iets goeds</span>, <span class="highlight">iets lekkers</span>, <span class="highlight">iets geks</span>, <span class="highlight">iets aardigs</span>, <span class="highlight">iets liefs</span> en hoe dan ook <span class="underline">iets positiefs</span>.</p>
         <p><strong>Gelukkig nieuwjaar!</strong></p>
-        <img src="URL_VAN_HARDLOPEN_AFBEELDING" alt="Hardlopen">
         <footer>Met liefde gemaakt, speciaal voor jou.</footer>
     </div>
     <div class="hidden-text"><!DOCTYPE html></div>
