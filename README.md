@@ -103,6 +103,58 @@
         .hidden-text {
             color: #f5f5f5; /* zelfde kleur als de achtergrond */
         }
+
+        /* Nieuwjaarsvuurpijl */
+        .firework {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 5px;
+            height: 100px;
+            background-color: #ffd700;
+            animation: launch 2s ease-in-out infinite;
+        }
+
+        @keyframes launch {
+            0% {
+                bottom: 0;
+                opacity: 1;
+            }
+            80% {
+                bottom: 80%;
+                opacity: 1;
+            }
+            100% {
+                bottom: 100%;
+                opacity: 0;
+            }
+        }
+
+        .explosion {
+            position: absolute;
+            bottom: 80%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: #ffd700;
+            border-radius: 50%;
+            animation: explode 2s ease-in-out infinite;
+        }
+
+        @keyframes explode {
+            0%, 80% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            85% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0);
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -112,6 +164,8 @@
         <p><strong>Gelukkig nieuwjaar!</strong></p>
         <footer>Met liefde gemaakt, speciaal voor jou.</footer>
     </div>
+    <div class="firework"></div>
+    <div class="explosion"></div>
     <div class="hidden-text"><!DOCTYPE html></div>
 </body>
 </html>
