@@ -111,11 +111,11 @@
 <body>
     <div class="container">
         <h1>Een speciale nieuwjaarswens voor Mariska</h1>
-        <img src="https://example.com/oud-en-nieuw.jpg" alt="Oud en Nieuw">
+        <img src="URL_VAN_OUD_EN_NIEUW_AFBEELDING" alt="Oud en Nieuw">
         <p>Ik wens je iets goeds, iets lekkers, iets geks, iets aardigs, iets liefs en hoe dan ook iets positiefs.</p>
-        <img src="https://example.com/zeep.jpg" alt="Zeep">
+        <img src="URL_VAN_ZEEP_AFBEELDING" alt="Zeep">
         <p><strong>Gelukkig nieuwjaar!</strong></p>
-        <img src="https://example.com/hardlopen.jpg" alt="Hardlopen">
+        <img src="URL_VAN_HARDLOPEN_AFBEELDING" alt="Hardlopen">
         <footer>Met liefde gemaakt, speciaal voor jou.</footer>
     </div>
 </body>
