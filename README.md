@@ -105,15 +105,27 @@
             color: #f5f5f5; /* zelfde kleur als de achtergrond */
         }
 
-        /* Ballonnen */
-        .balloon {
+        /* Champagneflessen */
+        .champagne {
             position: absolute;
             bottom: -100px;
             width: 30px;
-            height: 50px;
+            height: 60px;
             background-color: #ffd700;
-            border-radius: 50% 50% 50% 50%;
+            border-radius: 10px 10px 0 0;
             animation: rise 5s ease-in-out infinite;
+        }
+
+        .champagne::before {
+            content: '';
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            width: 10px;
+            height: 20px;
+            background-color: #333;
+            border-radius: 50%;
+            transform: translateX(-50%);
         }
 
         @keyframes rise {
@@ -128,16 +140,6 @@
                 bottom: 100vh;
                 opacity: 0;
             }
-        }
-
-        .balloon::before {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            width: 2px;
-            height: 20px;
-            background-color: #ffd700;
         }
 
         /* Vallende sterren */
@@ -190,10 +192,10 @@
         <p><strong>Gelukkig nieuwjaar!</strong></p>
         <footer>Met liefde gemaakt, speciaal voor jou.</footer>
     </div>
-    <div class="balloon" style="left: 20%; animation-delay: 0s;"></div>
-    <div class="balloon" style="left: 40%; animation-delay: 1s;"></div>
-    <div class="balloon" style="left: 60%; animation-delay: 2s;"></div>
-    <div class="balloon" style="left: 80%; animation-delay: 3s;"></div>
+    <div class="champagne" style="left: 20%; animation-delay: 0s;"></div>
+    <div class="champagne" style="left: 40%; animation-delay: 1s;"></div>
+    <div class="champagne" style="left: 60%; animation-delay: 2s;"></div>
+    <div class="champagne" style="left: 80%; animation-delay: 3s;"></div>
     <div class="shooting-star" style="left: 20%; animation-delay: 0s;"></div>
     <div class="shooting-star" style="left: 40%; animation-delay: 1s;"></div>
     <div class="shooting-star" style="left: 60%; animation-delay: 2s;"></div>
