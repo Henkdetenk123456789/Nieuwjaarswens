@@ -1,3 +1,4 @@
+
 <!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
@@ -52,7 +53,7 @@
         .container {
             background-color: #ffffff;
             padding: 2em;
-            border-radius: 5px;
+            border-radius: 20px; /* ronde afwerking */
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             max-width: 600px;
             width: 100%;
