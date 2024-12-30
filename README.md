@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -105,56 +105,39 @@
             color: #f5f5f5; /* zelfde kleur als de achtergrond */
         }
 
-        /* Nieuwjaarsvuurpijl */
-        .firework {
+        /* Ballonnen */
+        .balloon {
             position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 5px;
-            height: 100px;
-            background-color: #ffd700;
-            animation: launch 2s ease-in-out infinite;
-        }
-
-        @keyframes launch {
-            0% {
-                bottom: 0;
-                opacity: 1;
-            }
-            80% {
-                bottom: 80%;
-                opacity: 1;
-            }
-            100% {
-                bottom: 100%;
-                opacity: 0;
-            }
-        }
-
-        .explosion {
-            position: absolute;
-            bottom: 80%;
-            left: 50%;
-            width: 50px;
+            bottom: -100px;
+            width: 30px;
             height: 50px;
             background-color: #ffd700;
-            border-radius: 50%;
-            animation: explode 2s ease-in-out infinite;
+            border-radius: 50% 50% 50% 50%;
+            animation: rise 5s ease-in-out infinite;
         }
 
-        @keyframes explode {
-            0%, 80% {
-                transform: scale(0);
+        @keyframes rise {
+            0% {
+                bottom: -100px;
                 opacity: 0;
             }
-            85% {
-                transform: scale(1);
+            50% {
                 opacity: 1;
             }
             100% {
-                transform: scale(0);
+                bottom: 100vh;
                 opacity: 0;
             }
+        }
+
+        .balloon::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background-color: #ffd700;
         }
 
         /* Vallende sterren */
@@ -207,8 +190,10 @@
         <p><strong>Gelukkig nieuwjaar!</strong></p>
         <footer>Met liefde gemaakt, speciaal voor jou.</footer>
     </div>
-    <div class="firework"></div>
-    <div class="explosion"></div>
+    <div class="balloon" style="left: 20%; animation-delay: 0s;"></div>
+    <div class="balloon" style="left: 40%; animation-delay: 1s;"></div>
+    <div class="balloon" style="left: 60%; animation-delay: 2s;"></div>
+    <div class="balloon" style="left: 80%; animation-delay: 3s;"></div>
     <div class="shooting-star" style="left: 20%; animation-delay: 0s;"></div>
     <div class="shooting-star" style="left: 40%; animation-delay: 1s;"></div>
     <div class="shooting-star" style="left: 60%; animation-delay: 2s;"></div>
@@ -218,6 +203,6 @@
     <div class="confetti" style="left: 50%; animation-delay: 1s;"></div>
     <div class="confetti" style="left: 70%; animation-delay: 1.5s;"></div>
     <div class="confetti" style="left: 90%; animation-delay: 2s;"></div>
-    <div class="hidden-text"><!DOCTYPE html></div>
+    <div class="hidden-text"><!-- <!DOCTYPE html> --></div>
 </body>
 </html>
