@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,14 +30,10 @@
             font-weight: bold;
             margin-bottom: 20px;
         }
-        .rebus {
+        .message {
             font-size: 18px;
             margin: 20px 0;
-        }
-        .rebus img {
-            width: 50px;
-            vertical-align: middle;
-            margin: 0 5px;
+            line-height: 1.6;
         }
         .footer {
             font-size: 14px;
@@ -48,16 +45,8 @@
 <body>
     <div class="container">
         <div class="title">Een speciale nieuwjaarswens voor Mariska</div>
-        <div class="rebus">
-            <p>Ik wens je:</p>
-            <p>
-                <img src="https://via.placeholder.com/50?text=G" alt="Goed"> iets goeds,<br>
-                <img src="https://via.placeholder.com/50?text=Donut" alt="Lekker"> iets lekkers,<br>
-                <img src="https://via.placeholder.com/50?text=%3F" alt="Gek"> iets geks,<br>
-                <img src="https://via.placeholder.com/50?text=Hart" alt="Aardig"> iets aardigs,<br>
-                <img src="https://via.placeholder.com/50?text=Lief" alt="Lief"> iets liefs,<br>
-                en hoe dan ook iets positiefs.
-            </p>
+        <div class="message">
+            <p>Ik wens je iets goeds, iets lekkers, iets geks, iets aardigs, iets liefs en hoe dan ook iets positiefs.</p>
             <p><strong>Gelukkig nieuwjaar!</strong></p>
         </div>
         <div class="footer">Met liefde gemaakt, speciaal voor jou.</div>
