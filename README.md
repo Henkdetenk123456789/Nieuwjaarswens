@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +21,7 @@
 
         h1 {
             font-size: 2.5em;
-            color: #6b8e23; /* olijfgroene kleur voor de titel */
+            color: #ffd700; /* gouden kleur voor de titel */
             margin-bottom: 0.5em;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -33,7 +32,7 @@
             font-size: 1.2em;
             line-height: 1.6;
             margin: 0.5em 0;
-            color: #555; /* zachtere kleur voor de tekst */
+            color: #6b8e23; /* groene kleur voor de tekst */
         }
 
         footer {
@@ -45,7 +44,7 @@
         }
 
         strong {
-            color: #b22222; /* donkerrode kleur voor nadruk */
+            color: #ffd700; /* gouden kleur voor nadruk */
             font-weight: bold;
         }
 
@@ -58,15 +57,6 @@
             width: 100%;
             text-align: center;
             animation: zoomIn 0.8s ease-out;
-        }
-
-        .highlight {
-            color: #ff6347; /* tomaatkleur voor extra nadruk */
-            font-weight: bold;
-        }
-
-        .underline {
-            text-decoration: underline;
         }
 
         /* Subtiele animaties */
@@ -118,7 +108,7 @@
 <body>
     <div class="container">
         <h1>Een speciale nieuwjaarswens voor Mariska</h1>
-        <p>Ik wens je <span class="highlight">iets goeds</span>, <span class="highlight">iets lekkers</span>, <span class="highlight">iets geks</span>, <span class="highlight">iets aardigs</span>, <span class="highlight">iets liefs</span> en hoe dan ook <span class="underline">iets positiefs</span>.</p>
+        <p>Ik wens je iets goeds, iets lekkers, iets geks, iets aardigs, iets liefs en hoe dan ook iets positiefs.</p>
         <p><strong>Gelukkig nieuwjaar!</strong></p>
         <footer>Met liefde gemaakt, speciaal voor jou.</footer>
     </div>
