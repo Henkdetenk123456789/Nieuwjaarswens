@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,8 +135,8 @@
             position: absolute;
             bottom: 80%;
             left: 50%;
-            width: 10px;
-            height: 10px;
+            width: 50px;
+            height: 50px;
             background-color: #ffd700;
             border-radius: 50%;
             animation: explode 2s ease-in-out infinite;
