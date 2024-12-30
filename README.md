@@ -116,7 +116,7 @@
 <body>
     <div class="container">
         <h1>Een speciale nieuwjaarswens voor Mariska</h1>
-        <img src="URL_VAN_OUD_EN_NIEUW_AFBEELDING" alt="Oud en Nieuw">
+        <img src="[URL_VAN_OUD_EN_NIEUW_AFBEELDING](https://media.s-bol.com/N5Yw8KKlZXkL/L8vZNGr/550x378.jpg)" alt="Oud en Nieuw">
         <p>Ik wens je iets goeds, iets lekkers, iets geks, iets aardigs, iets liefs en hoe dan ook iets positiefs.</p>
         <img src="URL_VAN_ZEEP_AFBEELDING" alt="Zeep">
         <p><strong>Gelukkig nieuwjaar!</strong></p>
