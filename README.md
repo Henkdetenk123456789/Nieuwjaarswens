@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background: linear-gradient(to right, #2c3e50, #4ca1af); /* donkere achtergrond met gradient */
-            color: #ecf0f1; /* parelmoerkleurige letters */
+            background-color: #000000; /* zwarte achtergrond */
+            color: #d3d3d3; /* wit/grijze letters */
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,7 +21,7 @@
 
         h1 {
             font-size: 3em;
-            color: #e74c3c; /* accentkleur voor de titel */
+            color: #ffffff; /* witte letters voor de titel */
             margin-bottom: 0.5em;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -32,12 +32,12 @@
             font-size: 1.3em;
             line-height: 1.6;
             margin: 0.5em 0;
-            color: #ecf0f1; /* parelmoerkleurige tekst */
+            color: #d3d3d3; /* wit/grijze tekst */
         }
 
         footer {
             font-size: 1.2em;
-            color: #bdc3c7;
+            color: #a9a9a9; /* lichtere grijze kleur voor de footer */
             margin-top: 2em;
             font-style: italic;
             animation: fadeIn 2s ease-in-out 1s; /* subtiele animatie voor footer */
